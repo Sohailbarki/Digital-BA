@@ -1,0 +1,20 @@
+[project]
+name = "digital-ba"
+version = "0.1.0"
+description = "Utilities for common digital business analytics metrics"
+authors = [{ name = "Digital BA" }]
+requires-python = ">=3.11"
+readme = "README.md"
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-q"
